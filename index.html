@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>NOIR — Clothing Store</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- NAVIGATION -->
+
+    <header>
+
+        <div class="logo">
+            NOIR
+        </div>
+
+        <nav>
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#shop">
+                Shop
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </nav>
+
+        <button
+            class="cart-button"
+            onclick="openCart()"
+        >
+            🛒 Cart
+            <span id="cartCount">0</span>
+        </button>
+
+    </header>
+
+
+
+    <!-- HERO -->
+
+    <main>
+
+        <section
+            id="home"
+            class="hero"
+        >
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    NEW COLLECTION
+                </p>
+
+                <h1>
+                    WEAR YOUR<br>
+                    STORY.
+                </h1>
+
+                <p>
+                    Discover clothing designed
+                    for everyday life.
+                </p>
+
+                <a
+                    href="#shop"
+                    class="shop-button"
+                >
+                    SHOP NOW
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- SHOP -->
+
+        <section
+            id="shop"
+            class="shop"
+        >
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    OUR COLLECTION
+                </p>
+
+                <h2>
+                    Featured Products
+                </h2>
+
+            </div>
+
+
+            <div
+                id="productGrid"
+                class="product-grid"
+            >
+
+                <p>
+                    Loading products...
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ABOUT -->
+
+        <section
+            id="about"
+            class="about"
+        >
+
+            <div>
+
+                <p class="eyebrow">
+                    ABOUT US
+                </p>
+
+                <h2>
+                    STYLE WITHOUT<br>
+                    THE NOISE.
+                </h2>
+
+            </div>
+
+            <p>
+                We believe clothing should feel
+                as good as it looks. Simple,
+                comfortable and made for you.
+            </p>
+
+        </section>
+
+
+
+        <!-- CONTACT -->
+
+        <section
+            id="contact"
+            class="contact"
+        >
+
+            <p class="eyebrow">
+                GET IN TOUCH
+            </p>
+
+            <h2>
+                HAVE A QUESTION?
+            </h2>
+
+            <p>
+                Contact us through phone,
+                Facebook or Instagram.
+            </p>
+
+            <button
+                onclick="contactUs()"
+                class="shop-button"
+            >
+                CONTACT US
+            </button>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- CART -->
+
+    <div
+        id="cart"
+        class="cart"
+    >
+
+        <div class="cart-box">
+
+            <button
+                class="close"
+                onclick="closeCart()"
+            >
+                ×
+            </button>
+
+            <h2>
+                YOUR CART
+            </h2>
+
+            <div id="cartItems">
+                Your cart is empty.
+            </div>
+
+            <div class="cart-total">
+
+                Total:
+
+                <strong>
+                    ৳<span id="cartTotal">0</span>
+                </strong>
+
+            </div>
+
+            <button
+                class="checkout-button"
+                onclick="checkout()"
+            >
+                CHECKOUT
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <footer>
+
+        <div class="logo">
+            NOIR
+        </div>
+
+        <p>
+            © 2026 NOIR. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
